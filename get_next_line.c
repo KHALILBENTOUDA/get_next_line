@@ -6,7 +6,7 @@
 /*   By: kben-tou <kben-tou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 11:14:21 by kben-tou          #+#    #+#             */
-/*   Updated: 2024/12/13 19:05:41 by kben-tou         ###   ########.fr       */
+/*   Updated: 2024/12/14 18:42:39 by kben-tou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
+#include <fcntl.h>
+#include <libc.h>
 
 static char	*read_file(int fd, char *store, ssize_t readed, char *buff)
 {

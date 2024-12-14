@@ -6,7 +6,7 @@
 /*   By: kben-tou <kben-tou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 22:37:39 by kben-tou          #+#    #+#             */
-/*   Updated: 2024/12/13 17:49:12 by kben-tou         ###   ########.fr       */
+/*   Updated: 2024/12/14 18:36:54 by kben-tou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ static char	*after_newline(char *store)
 
 char	*get_next_line(int fd)
 {
-	static char	*store[OPEN_MAX];
+	static char	*store[10240];
 	char		*line;
 	char		*buff;
 	ssize_t		readed;
